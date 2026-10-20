@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a problem with UI Designer for VS Code.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem with UI Designer for VS Code.
+        Search existing issues first and report one problem per issue.
+        Everything posted here is public: remove secrets, personal information,
+        and proprietary code from descriptions, logs, and screenshots.
+        Do not disclose security vulnerabilities here.
+  - type: textarea
+    id: description
+    attributes:
+      label: What went wrong?
+      description: Describe the problem and how it affects your use of the extension.
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: UI Designer extension version
+      description: Find the installed version in VS Code's Extensions view.
+    validations:
+      required: true
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      description: Copy the version from Help > About (Code > About on macOS).
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system and version
+      description: Include whether you use WSL, SSH, or a development container.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide numbered steps and a minimal, sanitized example if possible.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include the exact error message, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Logs, screenshots, or additional context
+      description: Add sanitized diagnostics, screenshots, workarounds, or other relevant details.
